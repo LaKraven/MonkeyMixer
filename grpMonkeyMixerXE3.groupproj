@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{661AB92D-059C-4BB2-9C8E-EF644D5320B7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Package\XE3\MonkeyMixer_.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Library\XE3\MonkeyMixerXE3.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Test Projects\XE3\1 - Simple VCL Application\MMSimpleVCLApplication.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MonkeyMixer_">
+        <MSBuild Projects="Package\XE3\MonkeyMixer_.dproj"/>
+    </Target>
+    <Target Name="MonkeyMixer_:Clean">
+        <MSBuild Projects="Package\XE3\MonkeyMixer_.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyMixer_:Make">
+        <MSBuild Projects="Package\XE3\MonkeyMixer_.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MonkeyMixerXE3">
+        <MSBuild Projects="Library\XE3\MonkeyMixerXE3.dproj"/>
+    </Target>
+    <Target Name="MonkeyMixerXE3:Clean">
+        <MSBuild Projects="Library\XE3\MonkeyMixerXE3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyMixerXE3:Make">
+        <MSBuild Projects="Library\XE3\MonkeyMixerXE3.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MMSimpleVCLApplication">
+        <MSBuild Projects="Test Projects\XE3\1 - Simple VCL Application\MMSimpleVCLApplication.dproj"/>
+    </Target>
+    <Target Name="MMSimpleVCLApplication:Clean">
+        <MSBuild Projects="Test Projects\XE3\1 - Simple VCL Application\MMSimpleVCLApplication.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MMSimpleVCLApplication:Make">
+        <MSBuild Projects="Test Projects\XE3\1 - Simple VCL Application\MMSimpleVCLApplication.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MonkeyMixer_;MonkeyMixerXE3;MMSimpleVCLApplication"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MonkeyMixer_:Clean;MonkeyMixerXE3:Clean;MMSimpleVCLApplication:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MonkeyMixer_:Make;MonkeyMixerXE3:Make;MMSimpleVCLApplication:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

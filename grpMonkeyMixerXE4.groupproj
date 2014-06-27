@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{CCC10C3F-A451-4EE7-AB8D-3DCCA34448DB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Package\XE4\MonkeyMixer_.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Library\XE4\MonkeyMixerXE4.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MonkeyMixer_">
+        <MSBuild Projects="Package\XE4\MonkeyMixer_.dproj"/>
+    </Target>
+    <Target Name="MonkeyMixer_:Clean">
+        <MSBuild Projects="Package\XE4\MonkeyMixer_.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyMixer_:Make">
+        <MSBuild Projects="Package\XE4\MonkeyMixer_.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MonkeyMixerXE4">
+        <MSBuild Projects="Library\XE4\MonkeyMixerXE4.dproj"/>
+    </Target>
+    <Target Name="MonkeyMixerXE4:Clean">
+        <MSBuild Projects="Library\XE4\MonkeyMixerXE4.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyMixerXE4:Make">
+        <MSBuild Projects="Library\XE4\MonkeyMixerXE4.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MonkeyMixer_;MonkeyMixerXE4"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MonkeyMixer_:Clean;MonkeyMixerXE4:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MonkeyMixer_:Make;MonkeyMixerXE4:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

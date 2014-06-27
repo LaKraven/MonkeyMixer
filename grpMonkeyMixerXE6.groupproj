@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BC95FD33-DCC2-49B2-8E21-0CB6C029BDB9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Package\XE6\MonkeyMixer_.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Library\XE6\MonkeyMixerXE6.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Test Projects\XE6\MMSimpleVCLApplication.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MonkeyMixer_">
+        <MSBuild Projects="Package\XE6\MonkeyMixer_.dproj"/>
+    </Target>
+    <Target Name="MonkeyMixer_:Clean">
+        <MSBuild Projects="Package\XE6\MonkeyMixer_.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyMixer_:Make">
+        <MSBuild Projects="Package\XE6\MonkeyMixer_.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MonkeyMixerXE6">
+        <MSBuild Projects="Library\XE6\MonkeyMixerXE6.dproj"/>
+    </Target>
+    <Target Name="MonkeyMixerXE6:Clean">
+        <MSBuild Projects="Library\XE6\MonkeyMixerXE6.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyMixerXE6:Make">
+        <MSBuild Projects="Library\XE6\MonkeyMixerXE6.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MMSimpleVCLApplication">
+        <MSBuild Projects="Test Projects\XE6\MMSimpleVCLApplication.dproj"/>
+    </Target>
+    <Target Name="MMSimpleVCLApplication:Clean">
+        <MSBuild Projects="Test Projects\XE6\MMSimpleVCLApplication.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MMSimpleVCLApplication:Make">
+        <MSBuild Projects="Test Projects\XE6\MMSimpleVCLApplication.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MonkeyMixer_;MonkeyMixerXE6;MMSimpleVCLApplication"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MonkeyMixer_:Clean;MonkeyMixerXE6:Clean;MMSimpleVCLApplication:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MonkeyMixer_:Make;MonkeyMixerXE6:Make;MMSimpleVCLApplication:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
