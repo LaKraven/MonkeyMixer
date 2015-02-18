@@ -34,10 +34,10 @@ requires
 
 contains
   MonkeyMixer.Wizard in '..\..\Source\Core\MonkeyMixer.Wizard.pas',
-  CastaliaPasLexTypes in '..\..\Source\Common\CastaliaPasLexTypes.pas',
-  CastaliaSimplePasPar in '..\..\Source\Common\CastaliaSimplePasPar.pas',
-  CastaliaSimplePasParTypes in '..\..\Source\Common\CastaliaSimplePasParTypes.pas',
+  MMCastaliaPasLexTypes in '..\..\Source\Common\MMCastaliaPasLexTypes.pas',
+  MMCastaliaSimplePasPar in '..\..\Source\Common\MMCastaliaSimplePasPar.pas',
+  MMCastaliaSimplePasParTypes in '..\..\Source\Common\MMCastaliaSimplePasParTypes.pas',
   UsesFixerParser in '..\..\Source\Common\UsesFixerParser.pas',
-  CastaliaPasLexer in '..\..\Source\Common\CastaliaPasLexer.pas';
+  MMCastaliaPasLexer in '..\..\Source\Common\MMCastaliaPasLexer.pas';
 
 end.

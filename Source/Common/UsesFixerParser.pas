@@ -4,7 +4,7 @@ interface
 
 uses
   Classes, SysUtils,
-  CastaliaPasLexer, CastaliaSimplePasPar, CastaliaPasLexTypes;
+  MMCastaliaPasLexer, MMCastaliaSimplePasPar, MMCastaliaPasLexTypes;
 
 type
   TUsesUnit = record

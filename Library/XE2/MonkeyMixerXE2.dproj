@@ -100,13 +100,13 @@
 			<DelphiCompile Include="$(MainSource)">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="..\..\Source\Common\CastaliaPasLexer.pas"/>
-			<DCCReference Include="..\..\Source\Common\CastaliaPasLexTypes.pas"/>
-			<DCCReference Include="..\..\Source\Common\CastaliaSimplePasPar.pas"/>
-			<DCCReference Include="..\..\Source\Common\CastaliaSimplePasParTypes.pas"/>
+			<DCCReference Include="..\..\Source\Common\MMCastaliaPasLexer.pas"/>
+			<DCCReference Include="..\..\Source\Common\MMCastaliaPasLexTypes.pas"/>
+			<DCCReference Include="..\..\Source\Common\MMCastaliaSimplePasPar.pas"/>
+			<DCCReference Include="..\..\Source\Common\MMCastaliaSimplePasParTypes.pas"/>
 			<DCCReference Include="..\..\Source\Common\UsesFixerParser.pas"/>
 			<DCCReference Include="..\..\Source\Core\MonkeyMixer.Wizard.pas"/>
-			<None Include="..\..\Source\Common\CastaliaParserDefines.inc"/>
+			<None Include="..\..\Source\Common\MMCastaliaParserDefines.inc"/>
 			<BuildConfiguration Include="Release">
 				<Key>Cfg_2</Key>
 				<CfgParent>Base</CfgParent>

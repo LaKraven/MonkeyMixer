@@ -14,10 +14,10 @@ uses
   System.SysUtils,
   System.Classes,
   MonkeyMixer.Wizard in '..\..\Source\Core\MonkeyMixer.Wizard.pas',
-  CastaliaPasLexer in '..\..\Source\Common\CastaliaPasLexer.pas',
-  CastaliaPasLexTypes in '..\..\Source\Common\CastaliaPasLexTypes.pas',
-  CastaliaSimplePasPar in '..\..\Source\Common\CastaliaSimplePasPar.pas',
-  CastaliaSimplePasParTypes in '..\..\Source\Common\CastaliaSimplePasParTypes.pas',
+  MMCastaliaPasLexer in '..\..\Source\Common\MMCastaliaPasLexer.pas',
+  MMCastaliaPasLexTypes in '..\..\Source\Common\MMCastaliaPasLexTypes.pas',
+  MMCastaliaSimplePasPar in '..\..\Source\Common\MMCastaliaSimplePasPar.pas',
+  MMCastaliaSimplePasParTypes in '..\..\Source\Common\MMCastaliaSimplePasParTypes.pas',
   UsesFixerParser in '..\..\Source\Common\UsesFixerParser.pas';
 
 {$R *.res}
