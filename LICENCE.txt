@@ -1,5 +1,5 @@
-MonkeyMixer for RAD Studio XE6
-Copyright (C) 2011-2014, LaKraven Studios Ltd, All Rights Reserved
+MonkeyMixer for RAD Studio XE2 to XE8
+Copyright (C) 2011-2015, LaKraven Studios Ltd, All Rights Reserved
 --------------------------------------------------------------
 
 MonkeyMixer is released as FREEWARE, and may be freely distributed subject to the terms of this licence.
