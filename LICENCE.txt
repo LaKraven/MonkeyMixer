@@ -1,4 +1,4 @@
-MonkeyMixer for RAD Studio XE2 to XE8
+MonkeyMixer for RAD Studio XE2 to 10 Seattle
 Copyright (C) 2011-2015, LaKraven Studios Ltd, All Rights Reserved
 --------------------------------------------------------------
 

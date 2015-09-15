@@ -1,13 +1,13 @@
-MonkeyMixer for Delphi XE6
+MonkeyMixer for Delphi XE2-10 "Seattle"
 Version 1.6
 
-Copyright (C) 2011-2014, LaKraven Studios Ltd, All Rights Reserved
+Copyright (C) 2011-2015, LaKraven Studios Ltd, All Rights Reserved
 Visit: http://www.LaKraven.com
 --------------------------------------------------------------------------------------------------
 
-MonkeyMixer is a RAD Studio XE6 Plugin enabling you to mix FireMonkey and VCL Forms in the same Project!
+MonkeyMixer is a RAD Studio XE2-10 "Seattle" Plugin enabling you to mix FireMonkey and VCL Forms in the same Project!
 
-Please ensure that RAD Studio XE6 is not running during the installation, as you will be required to restart the IDE for MonkeyMixer to function.
+Please ensure that RAD Studio XE-10 "Seattle" is not running during the installation, as you will be required to restart the IDE for MonkeyMixer to function.
 
 To use MonkeyMixer, right-click on your Project in the "Project Manager", and locate either:
 
