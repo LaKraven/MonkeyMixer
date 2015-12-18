@@ -52,7 +52,7 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
         <DCC_UsePackage>vcl;designide;rtl;$(DCC_UsePackage)</DCC_UsePackage>
-        <VerInfo_Keys>CompanyName=LaKraven Studios Ltd.;FileDescription=MonkeyMixer - Mix FireMonkey and VCL Forms in the same project!;FileVersion=1.0.2.0;InternalName=MonkeyMixer;LegalCopyright=Copyright (C) 2011-2013, LaKraven Studios Ltd, All Rights Reserved;LegalTrademarks=;OriginalFilename=MonkeyMixerXE4.dll;ProductName=MonkeyMixer;ProductVersion=1.0;Comments=RAD Studio XE4 IDE Plugin</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Simon J Stuart.;FileDescription=MonkeyMixer - Mix FireMonkey and VCL Forms in the same project!;FileVersion=1.0.2.0;InternalName=MonkeyMixer;LegalCopyright=Copyright (C) 2011-2013, Simon J Stuart, All Rights Reserved;LegalTrademarks=;OriginalFilename=MonkeyMixerXE4.dll;ProductName=MonkeyMixer;ProductVersion=1.0;Comments=RAD Studio XE4 IDE Plugin</VerInfo_Keys>
         <Manifest_File>None</Manifest_File>
         <UsePackages>true</UsePackages>
         <VerInfo_Release>2</VerInfo_Release>

@@ -47,7 +47,7 @@
     <PropertyGroup Condition="'$(Base)'!=''">
         <DCC_UsePackage>vcl;designide;rtl;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_Define>DLLEXPERT;$(DCC_Define)</DCC_Define>
-        <VerInfo_Keys>CompanyName=LaKraven Studios Ltd.;FileDescription=MonkeyMixer - Mix FireMonkey and VCL Forms in the same project!;FileVersion=1.6.1.0;InternalName=MonkeyMixer;LegalCopyright=Copyright (C) 2011-2014, LaKraven Studios Ltd, All Rights Reserved;LegalTrademarks=;OriginalFilename=MonkeyMixerXE6.dll;ProductName=MonkeyMixer;ProductVersion=1.6;Comments=RAD Studio XE6 IDE Plugin</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Simon J Stuart.;FileDescription=MonkeyMixer - Mix FireMonkey and VCL Forms in the same project!;FileVersion=1.6.1.0;InternalName=MonkeyMixer;LegalCopyright=Copyright (C) 2011-2014, Simon J Stuart, All Rights Reserved;LegalTrademarks=;OriginalFilename=MonkeyMixerXE6.dll;ProductName=MonkeyMixer;ProductVersion=1.6;Comments=RAD Studio XE6 IDE Plugin</VerInfo_Keys>
         <Manifest_File>None</Manifest_File>
         <VerInfo_Locale>2057</VerInfo_Locale>
         <VerInfo_MinorVer>6</VerInfo_MinorVer>

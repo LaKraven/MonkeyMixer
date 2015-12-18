@@ -1,5 +1,5 @@
 MonkeyMixer for RAD Studio XE2 to 10 Seattle
-Copyright (C) 2011-2015, LaKraven Studios Ltd, All Rights Reserved
+Copyright (C) 2011-2015, Simon J Stuart, All Rights Reserved
 --------------------------------------------------------------
 
 MonkeyMixer is released as FREEWARE, and may be freely distributed subject to the terms of this licence.
@@ -13,12 +13,12 @@ ABSOLUTELY FREE!
 ----------------
 If you wish to distribute MonkeyMixer, you must not charge either for MonkeyMixer or its distribution method without express written permittion.
 Should you wish to distribute MonkeyMixer as part of any physical media where said physical media involves a cost to the consumer (including delivery charges),
-written permittion from LaKraven Studios Ltd is required. You can request this permittion by e-mail to simon@lakraven.com.
+written permittion from Simon J Stuart is required. You can request this permittion by e-mail to simon@lakraven.com.
 
 WARRANTY
 --------
 MonkeyMixer is provided "as-is", with absolutely no warranty or guarantee of any kind, including (but not limited to) functionality, suitability or viability for
-purpose. LaKraven Studios Ltd, its employees, partners or other associated entities will not be held accountable for any losses or damages resulting from
+purpose. Simon J Stuart, any partners or other associated entities will not be held accountable for any losses or damages resulting from
 (or during the use of) MonkeyMixer. This indemnity is universal.
 
 Should you not agree to any terms stated herein, you must remove MonkeyMixer from your system(s), as well as all other storage media immediately.

@@ -51,7 +51,7 @@
 			<VerInfo_AutoGenVersion>true</VerInfo_AutoGenVersion>
 			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
 			<DCC_Define>DLLEXPERT;$(DCC_Define)</DCC_Define>
-			<VerInfo_Keys>CompanyName=LaKraven Studios Ltd.;FileDescription=MonkeyMixer - Mix FireMonkey and VCL Forms in the same project!;FileVersion=1.3.2.0;InternalName=MonkeyMixer;LegalCopyright=Copyright (C) 2011-2013, LaKraven Studios Ltd, All Rights Reserved;LegalTrademarks=;OriginalFilename=MonkeyMixerXE2.dll;ProductName=MonkeyMixer;ProductVersion=1.3;Comments=RAD Studio XE2 IDE Plugin</VerInfo_Keys>
+			<VerInfo_Keys>CompanyName=Simon J Stuart.;FileDescription=MonkeyMixer - Mix FireMonkey and VCL Forms in the same project!;FileVersion=1.3.2.0;InternalName=MonkeyMixer;LegalCopyright=Copyright (C) 2011-2013, Simon J Stuart, All Rights Reserved;LegalTrademarks=;OriginalFilename=MonkeyMixerXE2.dll;ProductName=MonkeyMixer;ProductVersion=1.3;Comments=RAD Studio XE2 IDE Plugin</VerInfo_Keys>
 			<Manifest_File>None</Manifest_File>
 			<VerInfo_Locale>2057</VerInfo_Locale>
 			<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>

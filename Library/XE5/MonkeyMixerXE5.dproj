@@ -52,7 +52,7 @@
         <VerInfo_Locale>2057</VerInfo_Locale>
         <UsePackages>true</UsePackages>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
-        <VerInfo_Keys>CompanyName=LaKraven Studios Ltd.;FileDescription=MonkeyMixer - Mix FireMonkey and VCL Forms in the same project!;FileVersion=1.0.2.0;InternalName=MonkeyMixer;LegalCopyright=Copyright (C) 2011-2013, LaKraven Studios Ltd, All Rights Reserved;LegalTrademarks=;OriginalFilename=MonkeyMixerXE5.dll;ProductName=MonkeyMixer;ProductVersion=1.0;Comments=RAD Studio XE5 IDE Plugin</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Simon J Stuart.;FileDescription=MonkeyMixer - Mix FireMonkey and VCL Forms in the same project!;FileVersion=1.0.2.0;InternalName=MonkeyMixer;LegalCopyright=Copyright (C) 2011-2013, Simon J Stuart, All Rights Reserved;LegalTrademarks=;OriginalFilename=MonkeyMixerXE5.dll;ProductName=MonkeyMixer;ProductVersion=1.0;Comments=RAD Studio XE5 IDE Plugin</VerInfo_Keys>
         <GenDll>true</GenDll>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_DcuOutput>..\..\DCU\XE5\$(Platform)\$(Config)</DCC_DcuOutput>

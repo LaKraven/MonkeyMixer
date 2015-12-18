@@ -1,7 +1,7 @@
 MonkeyMixer for Delphi XE2-10 "Seattle"
 Version 1.6
 
-Copyright (C) 2011-2015, LaKraven Studios Ltd, All Rights Reserved
+Copyright (C) 2011-2015, Simon J Stuart, All Rights Reserved
 Visit: http://www.LaKraven.com
 --------------------------------------------------------------------------------------------------
 
