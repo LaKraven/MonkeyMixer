@@ -74,6 +74,9 @@ var
 function InitializeWizard(BorlandIDEServices: IBorlandIDEServices): TMonkeyMixerMenu;
 begin
   Result := TMonkeyMixerMenu.Create;
+  {$IFNDEF VER310}
+    bla
+  {$ENDIF VER310}
 end;
 
 {$IFNDEF DLLEXPERT}

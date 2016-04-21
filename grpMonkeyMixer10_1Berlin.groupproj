@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{65374508-6A71-4589-9C29-AA590965B090}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Package\10.1 Seattle\MonkeyMixer_.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Library\10.1 Berlin\MonkeyMixer10_1Berlin.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MonkeyMixer_">
+        <MSBuild Projects="Package\10.1 Seattle\MonkeyMixer_.dproj"/>
+    </Target>
+    <Target Name="MonkeyMixer_:Clean">
+        <MSBuild Projects="Package\10.1 Seattle\MonkeyMixer_.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyMixer_:Make">
+        <MSBuild Projects="Package\10.1 Seattle\MonkeyMixer_.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MonkeyMixer10_1Berlin">
+        <MSBuild Projects="Library\10.1 Berlin\MonkeyMixer10_1Berlin.dproj"/>
+    </Target>
+    <Target Name="MonkeyMixer10_1Berlin:Clean">
+        <MSBuild Projects="Library\10.1 Berlin\MonkeyMixer10_1Berlin.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MonkeyMixer10_1Berlin:Make">
+        <MSBuild Projects="Library\10.1 Berlin\MonkeyMixer10_1Berlin.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MonkeyMixer_;MonkeyMixer10_1Berlin"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MonkeyMixer_:Clean;MonkeyMixer10_1Berlin:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MonkeyMixer_:Make;MonkeyMixer10_1Berlin:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
